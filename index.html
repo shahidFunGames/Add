@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="game-logo.png" alt="Game Logo">
+            <h1>Math Game for Kids</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <div class="game-section">
+                <div class="question-container">
+                    <div class="question" id="question">Question: </div>
+                    <input type="text" id="answer" placeholder="Enter answer" />
+                    <button id="submit">Submit</button>
+                    <div class="timer" id="timer">Time: 60s</div>
+                    <div class="score" id="score">Score: 0</div>
+                    <button id="restart" class="hidden">Restart</button>
+                </div>
+                <div class="numbers-container">
+                    <div class="numbers-grid">
+                        <button class="number" data-value="1">1</button>
+                        <button class="number" data-value="2">2</button>
+                        <button class="number" data-value="3">3</button>
+                        <button class="number" data-value="4">4</button>
+                        <button class="number" data-value="5">5</button>
+                        <button class="number" data-value="6">6</button>
+                        <button class="number" data-value="7">7</button>
+                        <button class="number" data-value="8">8</button>
+                        <button class="number" data-value="9">9</button>
+                        <button class="number" data-value="0">0</button>
+                        <button id="clear" class="clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="history-section" id="history">
+                <h2>Questions</h2>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
